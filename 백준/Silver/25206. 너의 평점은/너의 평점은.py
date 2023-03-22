@@ -1,0 +1,32 @@
+cnt=0
+grade=0
+for i in range(20):
+    a,b,c=input().split()
+    if(c=="A+"):
+        cnt+=float(b)
+        grade+=float(b)*4.5
+    elif(c=="A0"):
+        cnt+=float(b)
+        grade+=float(b)*4.0
+    elif(c=="B+"):
+        cnt+=float(b)
+        grade+=float(b)*3.5
+    elif(c=="B0"):
+        cnt+=float(b)
+        grade+=float(b)*3.0
+    elif(c=="C+"):
+        cnt+=float(b)
+        grade+=float(b)*2.5
+    elif(c=="C0"):
+        cnt+=float(b)
+        grade+=float(b)*2.0
+    elif(c=="D+"):
+        cnt+=float(b)
+        grade+=float(b)*1.5
+    elif(c=="D0"):
+        cnt+=float(b)
+        grade+=float(b)*1.0
+    elif(c=="F"):
+        cnt+=float(b)
+        grade+=float(b)*0
+print(grade/cnt)
