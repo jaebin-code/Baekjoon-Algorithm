@@ -1,7 +1,9 @@
+import sys
+input=sys.stdin.readline
 n,k=map(int,input().split())
 dic={}
 for _ in range(n):
-    word=input()
+    word=input().rstrip()
     if len(word)<k:
         continue
     if word in dic:
