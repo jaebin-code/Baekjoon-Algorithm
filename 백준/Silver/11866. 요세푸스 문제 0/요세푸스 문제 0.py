@@ -10,7 +10,4 @@ while que:
     for i in range(k-1):
         que.append(que.popleft())
     list1.append(que.popleft())
-print("<",end="")
-for i in range(n-1):
-    print(str(list1[i])+",",end=" ")
-print(str(list1[-1])+">")
+print("<"+", ".join(map(str,list1))+">")
